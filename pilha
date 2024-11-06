@@ -1,5 +1,6 @@
 
 #include <iostream>
+using namespace std;
 
 typedef struct No {
     int info;
@@ -32,7 +33,7 @@ Pilha* desempilhar(Pilha* topo, int* valor) {
 void exibir(Pilha* topo) {
     Pilha* p = topo;
     while (p != nullptr) {
-        std::cout << p->info << " ";
+        cout << p->info << " ";
         p = p->prox;
     }
     std::cout << std::endl;
@@ -59,8 +60,8 @@ int main() {
 
     int valor;
     pilha = desempilhar(pilha, &valor);
-    std::cout << "Elemento desempilhado: " << valor << std::endl;
-    std::cout << "Pilha após desempilhar: ";
+    cout << "Elemento desempilhado: " << valor << std::endl;
+    cout << "Pilha após desempilhar: ";
     exibir(pilha);
 
     liberar(pilha);
