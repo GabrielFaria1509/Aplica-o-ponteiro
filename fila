@@ -23,7 +23,7 @@ Lista* enfileirar(Lista* lista, int valor) {
     
     
     Lista* p = lista;
-    while(p->prox != NULL)
+    while(p->prox != NULL)        
     {
         p = p->prox;
     }
